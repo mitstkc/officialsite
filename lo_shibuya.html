@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZTEW42GWX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0ZTEW42GWX');
+</script>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>渋谷三葉ビル屋上｜株式会社三葉ホールディングス</title>
+  <meta name="description" content="株式会社三葉ホールディングスは、新宿、渋谷、麹町にビルを所有する、不動産賃貸業を生業とする会社です。">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+   <!-- slick CSSの読込み -->
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  
+ <!-- googlefont
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- jQuery -->
+       
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ <script>
+            $(function(){
+
+    $(document).ready(function(){
+        
+    $(".menu_sp").click(function () {
+        $(this).next().slideToggle();
+        
+      
+    });
+});
+  });
+  
+  
+</script> 
+
+<script>
+    $(function(){
+    $(window).scroll(function (){
+        $('.buil_img,.campany_img,.news').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight +300){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+</script>
+  </head>
+<body>
+ <!-- ヘッダーここから -->
+ <header>
+  <div class="head_container">
+    
+      <div class="logo"><a href="./index.html"><img src="./images/logo_negro2.png" alt="logo"></a>
+    </div>
+   
+    <div class="head_nav">
+      <ul class="list">
+   <li class="item"><a href="#"><ruby>ビル事業<rt>OurProperty</rt></ruby></a>
+    <ul class="list_second">
+      <a href="kojimachi_b.html"><li class="item">麹町三葉ビル</li></a>
+      <a href="shibuya_b.html"><li class="item">渋谷三葉ビル</li></a>
+      <a href="shinjuku_b.html"><li class="item">新宿三葉ビル</li></a>
+      </ul>
+      </li>
+      <li class="item"><a href="#"><ruby>共創事業<rt>Space</rt></ruby></a>
+        <ul class="list_second">
+          <a href="service.html#rental"><li class="item">シェアスペース</li></a>
+          <a href="service.html#locat"><li class="item">ロケーションサービス</li></a>
+          <a href="service.html#truck"><li class="item">フードトラック</li></a>
+          
+          </ul>    
+      </li>
+      <li class="item"><a href="#"><ruby>会社情報<rt>philosophy</rt></ruby></a>
+        <ul class="list_second">
+          <a href="philosophy.html"><li class="item">企業理念</li></a>
+          <a href="philosophy.html#profile"><li class="item">会社概要</li></a>
+          <a href="history.html"><li class="item">沿革</li></a>
+          
+          </ul> 
+      </li>
+      
+   
+   <li class="item"><a href="contact.html"><ruby>お問合せ<rt>Contact</rt></ruby></a></li>
+    </ul>
+     </div>
+    </div>
+
+<!-- SPメニュー -->
+<div class="header-logo-menu">
+  <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+        <p class="smenu">ビル事業</p>
+        <li><a href="kojimachi_b.html">麹町三葉ビル</a></li>
+        <li><a href="shibuya_b.html">渋谷三葉ビル</a></li>
+        <li><a href="shinjuku_b.html">新宿三葉ビル</a></li>
+        <p class="smenu">共創事業</p>
+        <li><a href="service.html#rental">シェアスペース</a></li>
+        <li><a href="service.html#locat">ロケーションサービス</a></li>
+       <li> <a href="service.html#truck">フードトラック</a></li>
+        <p class="smenu">会社情報</p>
+        <li><a href="philosophy.html">企業理念</a></li>
+        <li><a href="philosophy.html#profile">会社概要</a></li>
+        <li><a href="history.html">沿革</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+          </ul>
+      </div>
+  </div>
+  
+  </div>
+<!-- SPメニューここまで -->
+    </header>
+<!-- ヘッダーここまで -->   
+  
+   <div class="header_sc"></div>
+   <div class="subhead_g"><p>渋谷三葉ビル屋上</p><div class="subtext">Shibuya</div></div>    
+
+    <div class="gps">
+   
+      <div class="icon">
+        <div class="g_icon"><a href="https://www.instagram.com/shibuya_mitsuba/" target="_blank" rel="noopener noreferrer"><img src="l_images/Insta_2.png"></a></div>
+        <div class="g_icon"><a href="https://www.locationbox.metro.tokyo.lg.jp/catalog/detail.html?pdid=7969" target="_blank" rel="noopener noreferrer"><img src="./images/up-right_b.png"></a></div>
+        <div class="g_icon"><a href="#map"><img src="l_images/map5.png"></a></div>
+        <div class="g_icon"><a href="mailto:okujo@mitsuba-inc.co.jp?subject=渋谷ロケーション問合せ &body=・撮影概要：%0D%0A%0D%0A ・利用日時：%0D%0A%0D%0A ・利用人数：%0D%0A%0D%0A ・ロケハン希望日：%0D%0A%0D%0A ・その他"><img src="l_images/mail.png"></a></div>
+
+      </div>
+
+        <div class="zero"><img src="l_images/s1.jpg" alt="画像1"></div>
+
+   
+
+    <div class="s_garelly_bot_a">
+        <div class="uno"><img src="l_images/photo7.jpg" alt="画像1"></div>
+        <div class="tres"><img src="l_images/photo8.JPG" alt="画像1"></div>
+        <div class="cuatro"><img src="l_images/photo12a.jpg" alt="画像1"></div>   
+</div>
+<div class="vimeo">
+  <iframe src="https://player.vimeo.com/video/1061078563?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="渋谷PV"></iframe>
+ a
+</div>
+<div class="s_garelly">
+  <div class="one"><img src="l_images/s2.JPG" alt="画像1"></div>
+  <div class="two"><img src="l_images/photo12.jpg" alt="画像1"></div>
+  <div class="three"><img src="l_images/photo5.jpg" alt="画像1"></div>
+  <div class="five"><img src="l_images/s4.JPG" alt="画像1"></div>
+</div>
+<div class="zero"><img src="l_images/s5.jpg" alt="画像1"></div>
+
+
+</div>
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.56771675789!2d139.69973302690806!3d35.66003875833364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca8417c66b5%3A0x9fd54f7d6955604b!2z44CSMTUwLTAwNDIg5p2x5Lqs6YO95riL6LC35Yy65a6H55Sw5bed55S677yS77yQ4oiS77yR77yRIOa4i-iwt-S4ieiRieODk-ODqw!5e0!3m2!1sja!2sjp!4v1654237919558!5m2!1sja!2sjp" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+ 
+  <!-- フッターここから -->
+  <footer>
+   <div class="footer_image"><img src="./images/g_wall@2x.jpg" alt="footer_image"></div>
+   
+   <div class="company_info">
+     <div class="reaction"><img src="./images/reaction.png" alt="reaction_logo"></div>
+       <div class="adress">
+    <p>株式会社三葉ホールディングス </p>
+    <p class="ad"><a href="https://www.google.com/maps/place/%E9%BA%B9%E7%94%BA%E4%B8%89%E8%91%89%E3%83%93%E3%83%AB/@35.685581,139.7386641,15.49z/data=!4m6!3m5!1s0x60188d78fcbf7fbf:0x69e73cf5261f7c6c!8m2!3d35.6855735!4d139.7373408!16s%2Fg%2F11ght9fm0s?hl=ja&entry=ttu" target="_blank" rel="noopener noreferrer"><img src="./images/location.png" alt=""></a>東京都千代田区二番町3-5　麹町三葉ビル</p>
+    </div>
+   </div>
+   <p class="copyright">©Mitsuba,&nbsp;Inc.</p>
+  
+</footer>
+<!-- フッターここまで-->
+
+</body>
+
+</html>

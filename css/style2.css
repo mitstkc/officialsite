@@ -1,0 +1,292 @@
+
+
+.container {
+    background-color: #fff;
+    padding: 60px 60px 25px 60px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 750px; 
+}
+
+.news_container {
+    background-color: #fff;
+    padding: 60px 10px 25px 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width:750px; 
+}
+
+.news_list_container {
+    background-color: #fff;
+    padding: 60px 10px 25px 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width:750px; 
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    word-break: break-all;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+.news_container a{
+    color: #189711;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.mix_container p{
+    margin-top: 1px;
+    text-align: center;
+    color: grey;
+    font-size: smaller;
+}
+
+.mix_container {
+    flex-flow: column;
+    padding-bottom: 20px;
+
+}
+
+.mix_container .image-container{
+    margin-bottom: 5px;
+}
+
+.image-container img {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.kumo {
+    background-image:url(../images/news/kumo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 50%;
+}
+
+.kumo p {
+    width: 51%;
+    padding-top: 16%;
+    padding-left: 29%;
+    font-size: clamp(0.8rem,1.2vw,12px);
+}
+
+.title p {
+    font-weight: bold;
+    background: #678e8a;
+    border-left: solid 10px #084740;
+    padding: 0.75rem 1.5rem;
+    color: white;
+}
+
+.eatfor{
+    border: solid 1px;
+    outline: solid #FFB300;
+    outline-offset: 1px;
+    border-color: #FFB300;
+    max-width: 853px;
+    width: 75%;
+    /* text-align: center; */
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 75px
+}
+
+.eatfor_para{
+    margin: 32px 50px;
+}
+
+.news_top{
+    
+    padding-left: 9%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+}
+
+.news_top p{
+    line-height: 20px;
+    color: #111111;
+}
+
+.u_comment li{
+    text-indent: -1.0em;
+    padding-left: 1.4em;
+    color: #555;
+}
+
+.news_leaf{
+    background-color: #678e8a2e;
+    padding: 10%;
+    border-radius: 70px 10px 100px 10px;
+    
+}
+
+.s_title{
+    font-weight: 600;
+    margin-bottom: 0em;
+}
+
+.date{
+    font-size: 10pt;
+    background-color: #678e8a;
+    text-align: center;
+    width: 12%;
+    margin: 0 0 0 auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.sp_br {
+    display: none; 
+  }
+  
+  .title p i{
+    padding-right:3%;
+    color: #96c185d9;
+  }
+
+  .anq{
+    list-style: square inside;
+    margin-bottom: 2px;
+   }
+
+   .anq li{
+    text-indent: -1.2em;
+    margin-left: 1.4em;
+    color: #555;
+   }
+
+   .anqnote {
+    font-size: smaller;
+    color: #8d8d8d;
+}
+@media only screen and (max-width:430px) {
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container img {
+        width: 90%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 23px 8px 0px 8px;
+    }
+
+    .news_top {
+        margin-bottom: 30px;
+    }
+
+    .news_top p {
+        line-height: 25px;
+        margin-bottom: 14px;
+    }
+
+    .eatfor_para {
+        margin: 12px 12px;
+    }
+
+    .kumo {
+        display: none;
+    }
+
+    .mix_container p {
+        margin-top: -24px; 
+    }
+    .sp_br {
+        display: block;
+      }
+    
+    
+
+}
+    @media only screen and (max-width:768px) {
+
+    .kumo p {font-size: 1.9vw;
+    }
+
+    .container {
+        padding: 20px 15px 5px 15px;
+        width: 100%;
+    }
+
+    .eatfor_para p{
+        margin-bottom: 10px;
+    }
+
+    .eatfor_para {
+        margin: 20px 50px;
+    }
+
+    .date {
+        font-size: 10pt;
+        width: 75px;
+    }
+
+
+}
+
+.newslist {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .newslist {
+      font-size: 12px;
+      padding: 0 15px;
+    }
+  }
+  
+  .newslist li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px 10px;
+    border-top: 2px solid black;
+    line-height: 1.5;
+  }
+  
+  .newslist li:last-child {
+    border-bottom: 2px solid black;
+  }
+  
+  .newslist li time {
+    padding-right: 20px;
+  }
+  
+  .newslist li a {
+    color: cornflowerblue;
+    text-decoration: none;
+  }
+   
