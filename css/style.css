@@ -1560,8 +1560,7 @@ footer{
     background-color: var(--color-primary);
     width:100%;
     max-width:1480px;
-    margin-top: 100px;
-    margin: o auto;
+    margin:0 auto;
     
 }
 
