@@ -4,7 +4,7 @@ body {
     font-size: 13px;
     font-weight: 400;
     line-height: 1.67;
-    color: #242422
+    color: #242422;
     
 }
 :root {
@@ -40,7 +40,7 @@ header{
     height: 95px;
     display: flex;
     align-items: center;
-    max-width: 1400px;
+    max-width: none;
     padding: 0 40px;
     margin: 0 auto;
 }
@@ -268,9 +268,7 @@ main {
     flex-direction: row;
     position: relative;
     width: 100%;
-    max-width:1480px;
     height: 632px;
-    margin: 0 auto;	
     
 }
 
@@ -1559,8 +1557,7 @@ main:nth-of-type(1) .location:nth-of-type(1){
 footer{
     background-color: var(--color-primary);
     width:100%;
-    max-width:1480px;
-    margin:0 auto;
+    margin-top: 100px;
     
 }
 
