@@ -24,9 +24,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.min.css">
    <!-- slick CSSの読込み -->
 <link rel="stylesheet" type="text/css" href="./slick/slick.css">
 <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
@@ -39,9 +37,10 @@
   
   <!-- jQuery -->
        
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
  
  <script>
+document.addEventListener('DOMContentLoaded', function () {
             $(function(){
 
     $(document).ready(function(){
@@ -55,9 +54,11 @@
   });
   
   
+});
 </script> 
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
     $(function(){
     $(window).scroll(function (){
         $('.buil_img,.campany_img,.news').each(function(){
@@ -71,14 +72,15 @@
         });
     });
 });
+});
 </script>
   </head>
 <body>
- <!-- ヘッダーここから -->
+<!-- ヘッダーここから -->
  <header>
   <div class="head_container">
     
-      <div class="logo"><a href="./index.html"><img src="./images/logo_negro2.png" alt="logo"></a>
+      <div class="logo"><a href="./index.html"><img width="8000" height="1156" src="./images/logo_negro2.png" alt="logo"></a>
     </div>
    
     <div class="head_nav">
@@ -92,10 +94,13 @@
       </li>
       <li class="item"><a href="#"><ruby>共創事業<rt>Space</rt></ruby></a>
         <ul class="list_second">
-          <a href="service.html#rental"><li class="item">スペースシェアリング</li></a>
-          <a href="service.html#locat"><li class="item">ロケーションサービス</li></a>
-          <a href="service.html#truck"><li class="item">フードトラック</li></a>
-          
+          <a href="#"><li class="item location-service"><p class="p_location">ロケーションサービス</p></a>
+            <ul class="list_third">
+              <a href="lo_shibuya.html"><li class="item">渋谷三葉ビル<br>屋上</li></a>
+              <a href="lo_kojimachi.html"><li class="item">麹町三葉ビル<br>屋上・エントランス</li></a>
+            </ul>
+          </li>
+          <a href="food-truck.html"><li class="item">フードトラック</li></a>
           </ul>    
       </li>
       <li class="item"><a href="#"><ruby>会社情報<rt>philosophy</rt></ruby></a>
@@ -127,9 +132,10 @@
         <li><a href="shibuya_b.html">渋谷三葉ビル</a></li>
         <li><a href="shinjuku_b.html">新宿三葉ビル</a></li>
         <p class="smenu">共創事業</p>
-        <li><a href="service.html#rental">シェアスペース</a></li>
-        <li><a href="service.html#locat">ロケーションサービス</a></li>
-       <li> <a href="service.html#truck">フードトラック</a></li>
+        <p class="smenu">ロケーションサービス</p>
+        <li><a href="lo_shibuya.html">渋谷三葉ビル　屋上</a></li>
+        <li><a href="lo_kojimachi.html">麹町三葉ビル　屋上・エントランス</a></li>
+       <p class="smenu"> <a href="food-truck.html">フードトラック</a></p>
         <p class="smenu">会社情報</p>
         <li><a href="philosophy.html">企業理念</a></li>
         <li><a href="philosophy.html#profile">会社概要</a></li>
@@ -150,35 +156,35 @@
     <div class="gps">
 
       <div class="icon">
-        <div class="g_icon"><a href="https://www.instagram.com/koujimachi_mitsuba/" target="_blank" rel="noopener noreferrer"><img src="l_images/Insta_2.png"></a></div>
-        <div class="g_icon"><a href="https://www.locationbox.metro.tokyo.lg.jp/catalog/detail.html?pdid=7968" target="_blank" rel="noopener noreferrer"><img src="./images/up-right_b.png"></a></div>
-        <div class="g_icon"><a href="#map"><img src="l_images/map5.png"></a></div>
-        <div class="g_icon"><a href="mailto:okujo@mitsuba-inc.co.jp?subject=麹町ロケーション問合せ　&body=・撮影概要：%0D%0A%0D%0A ・利用日時：%0D%0A%0D%0A ・利用人数：%0D%0A%0D%0A ・ロケハン希望日：%0D%0A%0D%0A ・その他"><img src="l_images/mail.png"></a></div>
+        <div class="g_icon"><a href="https://www.instagram.com/koujimachi_mitsuba/" target="_blank" rel="noopener noreferrer"><img width="4322" height="4320" src="l_images/Insta_2.png"></a></div>
+        <div class="g_icon"><a href="https://www.locationbox.metro.tokyo.lg.jp/catalog/detail.html?pdid=7968" target="_blank" rel="noopener noreferrer"><img width="513" height="510" src="./images/up-right_b.png"></a></div>
+        <div class="g_icon"><a href="#map"><img width="256" height="256" src="l_images/map5.png"></a></div>
+        <div class="g_icon"><a href="mailto:okujo@mitsuba-inc.co.jp?subject=麹町ロケーション問合せ　&body=・撮影概要：%0D%0A%0D%0A ・利用日時：%0D%0A%0D%0A ・利用人数：%0D%0A%0D%0A ・ロケハン希望日：%0D%0A%0D%0A ・その他"><img width="256" height="256" src="l_images/mail.png"></a></div>
       </div>
       
-      <div class="zero"><img src="l_images/k2.JPG" alt="画像1"></div>
+      <div class="zero"><img width="1600" height="1200" src="l_images/k2.JPG" alt="画像1"></div>
 
    
 
       <div class="s_garelly_bot_a">
-          <div class="uno"><img src="l_images/k3.jpg" alt="画像1"></div>
-          <div class="tres"><img src="l_images/k4.jpg" alt="画像1"></div>
-          <div class="cuatro"><img src="l_images/k5.jpg" alt="画像1"></div> 
+          <div class="uno"><img width="1400" height="933" src="l_images/k3.jpg" alt="画像1"></div>
+          <div class="tres"><picture><source srcset="l_images/k4.jpg.webp" type="image/webp"><img width="1920" height="1280" src="l_images/k4.jpg" alt="画像1"></picture></div>
+          <div class="cuatro"><picture><source srcset="l_images/k5.jpg.webp" type="image/webp"><img width="1920" height="1280" src="l_images/k5.jpg" alt="画像1"></picture></div> 
           </div>
  
 
     <div class="vimeo">
-        <iframe src="https://player.vimeo.com/video/1022336270?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="麹町PV"></iframe>
+        <iframe src="https://player.vimeo.com/video/1168704341?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="麹町PV"></iframe>
     </div>
 
     <div class="s_garelly">
-        <div class="one"><img src="l_images/k7.jpg" alt="画像1"></div>
-        <div class="two"><img src="l_images/k_photo5.jpg" alt="画像1"></div>
-        <div class="three"><img src="l_images/k6.jpg" alt="画像1"></div>
-        <div class="five"><img src="l_images/k8.jpg" alt="画像1"></div>
+        <div class="one"><picture><source srcset="l_images/k7.jpg.webp" type="image/webp"><img loading="lazy" width="1920" height="1440" src="l_images/k7.jpg" alt="画像1"></picture></div>
+        <div class="two"><img loading="lazy" width="494" height="362" src="l_images/k_photo5.jpg" alt="画像1"></div>
+        <div class="three"><img loading="lazy" width="1280" height="1600" src="l_images/k6.jpg" alt="画像1"></div>
+        <div class="five"><picture><source srcset="l_images/k8.jpg.webp" type="image/webp"><img loading="lazy" width="1800" height="1350" src="l_images/k8.jpg" alt="画像1"></picture></div>
       </div>
-      <div class="zero"><img src="l_images/k9.jpg" alt="画像1"></div>
-      <div class="zero"><img src="l_images/k10.jpg" alt="画像1"></div>
+      <div class="zero"><picture><source srcset="l_images/k9.jpg.webp" type="image/webp"><img loading="lazy" width="1920" height="1280" src="l_images/k9.jpg" alt="画像1"></picture></div>
+      <div class="zero"><img loading="lazy" width="1500" height="1000" src="l_images/k10.jpg" alt="画像1"></div>
 </div>
 <div id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2725.049595040493!2d139.73430069043187!3d35.685659331763816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d78fcbf7fbf%3A0x69e73cf5261f7c6c!2z6bq555S65LiJ6JGJ44OT44Or!5e0!3m2!1sja!2sjp!4v1654238099742!5m2!1sja!2sjp" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -188,13 +194,13 @@
     
     <!-- フッターここから -->
     <footer>
-      <div class="footer_image"><img src="./images/g_wall@2x.jpg" alt="footer_image"></div>
+      <div class="footer_image"><picture><source srcset="./images/g_wall@2x.jpg.webp" type="image/webp"><img loading="lazy" width="4300" height="517" src="./images/g_wall@2x.jpg" alt="footer_image"></picture></div>
         
         <div class="company_info">
-          <div class="reaction"><img src="./images/reaction.png" alt="reaction_logo"></div>
+          <div class="reaction"><img width="297" height="76" src="./images/reaction.png" alt="reaction_logo"></div>
             <div class="adress">
          <p>株式会社三葉ホールディングス </p>
-         <p class="ad"><a href="https://www.google.com/maps/place/%E9%BA%B9%E7%94%BA%E4%B8%89%E8%91%89%E3%83%93%E3%83%AB/@35.685581,139.7386641,15.49z/data=!4m6!3m5!1s0x60188d78fcbf7fbf:0x69e73cf5261f7c6c!8m2!3d35.6855735!4d139.7373408!16s%2Fg%2F11ght9fm0s?hl=ja&entry=ttu" target="_blank" rel="noopener noreferrer"><img src="./images/location.png" alt=""></a>東京都千代田区二番町3-5　麹町三葉ビル</p>
+         <p class="ad"><a href="https://www.google.com/maps/place/%E9%BA%B9%E7%94%BA%E4%B8%89%E8%91%89%E3%83%93%E3%83%AB/@35.685581,139.7386641,15.49z/data=!4m6!3m5!1s0x60188d78fcbf7fbf:0x69e73cf5261f7c6c!8m2!3d35.6855735!4d139.7373408!16s%2Fg%2F11ght9fm0s?hl=ja&entry=ttu" target="_blank" rel="noopener noreferrer"><img loading="lazy" width="41" height="54" src="./images/location.png" alt=""></a>東京都千代田区二番町3-5　麹町三葉ビル</p>
          </div>
         </div>
         <p class="copyright">©Mitsuba,&nbsp;Inc.</p>

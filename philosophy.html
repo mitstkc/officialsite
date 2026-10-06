@@ -24,7 +24,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
   
    <!-- googlefont
   –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
@@ -36,15 +35,14 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.min.css">
   
   <!-- jQuery -->
        
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
  
  <script>
+document.addEventListener('DOMContentLoaded', function () {
             $(function(){
 
     $(document).ready(function(){
@@ -57,9 +55,11 @@
 });
   });
   
+});
 </script> 
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
     $(function(){
     $(window).scroll(function (){
         $('.buil_img,.campany_img,.news').each(function(){
@@ -73,15 +73,16 @@
         });
     });
 });
+});
 </script>
   </head>
 <body>
 
- <!-- ヘッダーここから -->
+<!-- ヘッダーここから -->
  <header>
   <div class="head_container">
     
-      <div class="logo"><a href="./index.html"><img src="./images/logo_negro2.png" alt="logo"></a>
+      <div class="logo"><a href="./index.html"><img width="8000" height="1156" src="./images/logo_negro2.png" alt="logo"></a>
     </div>
    
     <div class="head_nav">
@@ -95,10 +96,13 @@
       </li>
       <li class="item"><a href="#"><ruby>共創事業<rt>Space</rt></ruby></a>
         <ul class="list_second">
-          <a href="service.html#rental"><li class="item">シェアスペース</li></a>
-          <a href="service.html#locat"><li class="item">ロケーションサービス</li></a>
-          <a href="service.html#truck"><li class="item">フードトラック</li></a>
-          
+          <a href="#"><li class="item location-service"><p class="p_location">ロケーションサービス</p></a>
+            <ul class="list_third">
+              <a href="lo_shibuya.html"><li class="item">渋谷三葉ビル<br>屋上</li></a>
+              <a href="lo_kojimachi.html"><li class="item">麹町三葉ビル<br>屋上・エントランス</li></a>
+            </ul>
+          </li>
+          <a href="food-truck.html"><li class="item">フードトラック</li></a>
           </ul>    
       </li>
       <li class="item"><a href="#"><ruby>会社情報<rt>philosophy</rt></ruby></a>
@@ -130,9 +134,10 @@
         <li><a href="shibuya_b.html">渋谷三葉ビル</a></li>
         <li><a href="shinjuku_b.html">新宿三葉ビル</a></li>
         <p class="smenu">共創事業</p>
-        <li><a href="service.html#rental">シェアスペース</a></li>
-        <li><a href="service.html#locat">ロケーションサービス</a></li>
-       <li> <a href="service.html#truck">フードトラック</a></li>
+        <p class="smenu">ロケーションサービス</p>
+        <li><a href="lo_shibuya.html">渋谷三葉ビル　屋上</a></li>
+        <li><a href="lo_kojimachi.html">麹町三葉ビル　屋上・エントランス</a></li>
+       <p class="smenu"> <a href="food-truck.html">フードトラック</a></p>
         <p class="smenu">会社情報</p>
         <li><a href="philosophy.html">企業理念</a></li>
         <li><a href="philosophy.html#profile">会社概要</a></li>
@@ -145,7 +150,7 @@
   </div>
 <!-- SPメニューここまで -->
     </header>
-<!-- ヘッダーここまで -->   
+<!-- ヘッダーここまで -->      
     
    <div class="header_sc"></div>
      <div class="subhead_g"><p>企業理念</p><div class="subtext">Philosophy</div>
@@ -195,12 +200,12 @@
     </div> -->
     
     <div class="image-wrap">
-      <img src="./images/philo_03@2x.jpg" alt="">
+      <img width="800" height="533" src="./images/philo_03@2x.jpg" alt="">
     </div> 
      </div>
       <div class="philo_article">
-     <img src="./images/philo07@2x.jpg" alt="office">
-     <img src="./images/philo1@2x.jpg" alt="office">
+     <img width="1920" height="2400" src="./images/philo07@2x.jpg" alt="office">
+     <img loading="lazy" width="2400" height="1920" src="./images/philo1@2x.jpg" alt="office">
      <div class="philo_para"><h2>MISSION&emsp;果たす使命<br><br>
 安心・安全で豊かな未来を目指して不動産を軸にできる取り組みに挑戦する
 </h2><p>かつては大衆娯楽であった映画館を、そして現在はオフィスや店舗を、私たちは創業時から今日まで、大勢の方が日常的に利用する場を提供してきました。人々の日常が垣間見えると、社会が直面している様々な課題が見えやすい。解決に向けて、先ず私たちが不動産企業としてできることは何か、日々模索し実行します。その一環として近年、全所有ビルへの再生可能エネルギーの導入や（2021年7月より「再エネ100宣言RE Action」参加）、シェアリングエコノミーを活用した遊休不動産の活性などを進めてきました。今後も同じ方向を向いたステークホルダーとの関わりを重視し、将来的に私たちの想いが周囲へ、そして未来へと波及していくことを願いながら一歩ずつ取り組みを進めて参ります。</p>
@@ -214,7 +219,7 @@
 <p class="philo3"><span>・エンターテインしながら未来へ歩む：</span></p><p>英語の「entertainment」という単語は、今日「娯楽」、即ち“人の心を魅了して離さないもの”の総称となっています。一方その語源を遡ると、古期フランス語の「entretenir」で、“お互いに支える、団結して協力し合う”という意味も有しています 。三葉グループの原点である映画、そして創業者喜三郎への敬意も込めて、「entertain」を広義に捉えて・・エンターテインしながら、親しみあるサステナブルな場づくりをし続けます。
 </p>
 </div> 
-<div class="philo_d"><img src="./images/philo06@2x.jpg" alt="tree"><img src="./images/philo04.jpg" alt="tree"></div>
+<div class="philo_d"><img width="600" height="400" src="./images/philo06@2x.jpg" alt="tree"><img loading="lazy" width="2880" height="1920" src="./images/philo04.jpg" alt="tree"></div>
 </div>
 </div>
 </main>
@@ -243,13 +248,13 @@
   <!-- 会社概要ここまで -->      
     <!-- フッターここから -->
     <footer>
-      <div class="footer_image"><img src="./images/g_wall@2x.jpg" alt="footer_image"></div>
+      <div class="footer_image"><picture><source srcset="./images/g_wall@2x.jpg.webp" type="image/webp"><img loading="lazy" width="4300" height="517" src="./images/g_wall@2x.jpg" alt="footer_image"></picture></div>
       
       <div class="company_info">
-        <div class="reaction"><img src="./images/reaction.png" alt="reaction_logo"></div>
+        <div class="reaction"><img width="297" height="76" src="./images/reaction.png" alt="reaction_logo"></div>
           <div class="adress">
        <p>株式会社三葉ホールディングス </p>
-       <p class="ad"><a href="https://www.google.com/maps/place/%E9%BA%B9%E7%94%BA%E4%B8%89%E8%91%89%E3%83%93%E3%83%AB/@35.685581,139.7386641,15.49z/data=!4m6!3m5!1s0x60188d78fcbf7fbf:0x69e73cf5261f7c6c!8m2!3d35.6855735!4d139.7373408!16s%2Fg%2F11ght9fm0s?hl=ja&entry=ttu" target="_blank" rel="noopener noreferrer"><img src="./images/location.png" alt=""></a>東京都千代田区二番町3-5　麹町三葉ビル</p>
+       <p class="ad"><a href="https://www.google.com/maps/place/%E9%BA%B9%E7%94%BA%E4%B8%89%E8%91%89%E3%83%93%E3%83%AB/@35.685581,139.7386641,15.49z/data=!4m6!3m5!1s0x60188d78fcbf7fbf:0x69e73cf5261f7c6c!8m2!3d35.6855735!4d139.7373408!16s%2Fg%2F11ght9fm0s?hl=ja&entry=ttu" target="_blank" rel="noopener noreferrer"><img loading="lazy" width="41" height="54" src="./images/location.png" alt=""></a>東京都千代田区二番町3-5　麹町三葉ビル</p>
        </div>
       </div>
       <p class="copyright">©Mitsuba,&nbsp;Inc.</p>
