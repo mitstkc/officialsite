@@ -290,3 +290,19 @@ a:hover {
     text-decoration: none;
   }
    
+/* ニュース一覧：日付を固定幅（最長の「2025年12月23日」が収まる幅）にして「お知らせ」タグの位置を全行でそろえる */
+.news_list_container .news_bar .news_date {
+    display: inline-block;
+    width: 7.5em;
+    white-space: nowrap;
+    margin-left: 0; /* style.css の .news_bar:nth-of-type(2)/(3) span の余白指定を打ち消す */
+}
+.news_list_container .news_bar .tag {
+    margin-left: 16px;
+}
+/* ニュース一覧（PC・タブレット）：本文が区切り線（幅90%）の右端を越えないよう、左と同じ5%の余白を右にも取る */
+@media only screen and (min-width: 768px) {
+    .news_list_container .news_bar {
+        padding-right: 5%;
+    }
+}
