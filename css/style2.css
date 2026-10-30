@@ -306,3 +306,27 @@ a:hover {
         padding-right: 5%;
     }
 }
+/* ニュース一覧（PC・タブレット）：日付・タグ・タイトルを横並びにし、タイトルが折り返したとき2行目以降をタイトルの書き出しにそろえる */
+@media only screen and (min-width: 768px) {
+    .news_list_container .news_bar p {
+        display: flex;
+        align-items: baseline;
+    }
+    .news_list_container .news_bar .news_date,
+    .news_list_container .news_bar .tag {
+        flex: none;
+    }
+    .news_list_container .news_bar .tag {
+        width: auto;      /* 横並びにしても、タグの幅はこれまでと同じ（文字幅＋余白）にする */
+        margin-top: 0;
+    }
+    .news_list_container .news_bar a {
+        flex: 1;
+        min-width: 0;
+    }
+}
+/* ニュース一覧：日本語を文節（「登壇しました」「募集中」など）の単位で改行し、最後の1文字だけが次の行に落ちるのを防ぐ。
+   Chrome・Edgeで有効。対応していないブラウザ（Safari・Firefox）ではこの指定は無視され、これまでどおりの改行になる */
+.news_list_container .news_bar p {
+    word-break: auto-phrase;
+}
